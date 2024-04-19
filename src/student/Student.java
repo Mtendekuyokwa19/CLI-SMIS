@@ -5,7 +5,7 @@ import sysAdmin.Fees;
 
 import java.util.ArrayList;
 
-public abstract class Student implements IStudent {
+public  class Student implements IStudent {
     private String firstName;
     private String surName;
     private ArrayList<Module> modules=new ArrayList<>();
@@ -18,7 +18,7 @@ public abstract class Student implements IStudent {
     private String userName;
 
 
-    public Student(String firstName, String surName, ArrayList<Module> modules, Fees fees, boolean accomodation,  char sex, int phoneNumber, String password) {
+    public Student(String firstName, String surName, ArrayList<Module> modules, Fees fees, boolean accomodation,  char sex, int phoneNumber) {
         this.firstName = firstName;
         this.surName = surName;
         this.modules = modules;
@@ -27,8 +27,8 @@ public abstract class Student implements IStudent {
 
         this.sex = sex;
         this.phoneNumber = phoneNumber;
-        this.password = password;
-        this.userName = firstName+surName;
+        this.password = "1234";
+        this.userName = surName+"@poly.ac.mw";
     }
 
     @Override
@@ -83,5 +83,5 @@ public abstract class Student implements IStudent {
     };
     public int getYears(){return years;};
 
-    public abstract void add(Module module);
+//    public abstract void add(Module module);
 }

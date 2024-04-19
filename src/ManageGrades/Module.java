@@ -9,10 +9,10 @@ public int numbers;
         return grade;
     }
 
-    public Module(String moduleName, String lecturer, float grade) {
+    public Module(String moduleName, String lecturer) {
         this.moduleName = moduleName;
         this.lecturer = lecturer;
-        this.grade = grade;
+        this.grade = 0;
     }
 
     public String getModuleName() {

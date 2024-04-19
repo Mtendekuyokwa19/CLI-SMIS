@@ -5,6 +5,10 @@ public class Fees {
     private int bankAccountNumber;
     private boolean loan;
 
+    public Fees(int bankAccountNumber) {
+        this.bankAccountNumber = bankAccountNumber;
+    }
+
     public float getBalance() {
         return balance;
     }
